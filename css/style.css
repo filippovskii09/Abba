@@ -238,6 +238,9 @@
   top: -22px;
   right: -86px;
   z-index: -1;
+  transition: all 0.8s ease 0.3s;
+  opacity: 0;
+  transform: scale(0.1);
 }
 @media (max-width: 1070px) {
   .main__image {
@@ -248,6 +251,11 @@
   .main__image {
     width: 100%;
   }
+}
+
+._active-image {
+  opacity: 1;
+  transform: scale(1);
 }
 
 ._active {

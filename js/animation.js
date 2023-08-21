@@ -19,7 +19,9 @@ if (animItems.length > 0) {
 			if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHight )) {
 				animItem.classList.add('_active')
 			} else {
-				animItem.classList.remove('_active')
+				if(!animItem.classList.contains('anim-no-hide')) {
+					animItem.classList.remove('_active')
+				}	
 			}
 		}
 	}

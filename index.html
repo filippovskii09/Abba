@@ -11,15 +11,19 @@
 	<title>Abba</title>
 </head>
 <body>
-	<header class="header">
+	<div class="preloader">
+		<div class="spinner"></div>
+	 </div>
+  <div class="content hidden">
+		<header class="header anim-items">
 		<div class="header__container container">
 			<a href="" class="header__logo"><img src="./images/logo.svg" alt=""></a>
 			<div class="header__menu menu">
 				<nav class="menu__body">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link anim-items">Projects</a></li>
-						<li class="menu__item"><a href="" class="menu__link anim-items">About</a></li>
-						<li class="menu__item"><a href="" class="menu__link anim-items">Digital Assets</a></li>
+						<li class="menu__item"><a href="" class="menu__link ">Projects</a></li>
+						<li class="menu__item"><a href="" class="menu__link ">About</a></li>
+						<li class="menu__item"><a href="" class="menu__link ">Digital Assets</a></li>
 					</ul>
 					<div class="menu__socials">
 						<img src="./images/menu-images/1.svg" alt="">
@@ -36,8 +40,8 @@
 				</button>
 			</div>
 		</div>
-	</header>
-	<main class="page">
+		</header>
+		<main class="page">
 		<section class="page__main main">
 			<div class="main__container container">
 				<div class="main__content">
@@ -47,7 +51,7 @@
 					<img src="./images/main/letters.svg" alt="" class="main__text anim-items">
 				</div>
 				<div class="main__images">
-					<div class="main__cube"></div>
+					<div class="main__cube anim-image"></div>
 					<img src="./images/main/main.svg" alt="" class="main__image anim-image">
 				</div>
 			</div>
@@ -55,21 +59,21 @@
 		<section class="page__second second">
 			<div class="second__container">
 				<div class="second__row">
-					<div class="second__column second-column">
+					<div class="second__column second-column anim-items">
 						<p class="second-column__number">01.</p>
 						<div class="second-column__info">
 							<h3 class="second-column__title">Breifs</h3>
 							<p class="second-column__text">consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
 						</div>
 					</div>
-					<div class="second__column second-column">
+					<div class="second__column second-column anim-items">
 						<p class="second-column__number">02.</p>
 						<div class="second-column__info">
 							<h3 class="second-column__title">Breifs</h3>
 							<p class="second-column__text">consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
 						</div>
 					</div>
-					<div class="second__column second-column">
+					<div class="second__column second-column anim-items">
 						<p class="second-column__number">03.</p>
 						<div class="second-column__info">
 							<h3 class="second-column__title">Breifs</h3>
@@ -78,21 +82,21 @@
 					</div>
 				</div>
 				<div class="second__row">
-					<div class="second__column second-column">
+					<div class="second__column second-column anim-items">
 						<p class="second-column__number">04.</p>
 						<div class="second-column__info">
 							<h3 class="second-column__title">Breifs</h3>
 							<p class="second-column__text">consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
 						</div>
 					</div>
-					<div class="second__column second-column">
+					<div class="second__column second-column anim-items">
 						<p class="second-column__number">05.</p>
 						<div class="second-column__info">
 							<h3 class="second-column__title">Breifs</h3>
 							<p class="second-column__text">consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
 						</div>
 					</div>
-					<div class="second__column second-column">
+					<div class="second__column second-column anim-items">
 						<p class="second-column__number">06.</p>
 						<div class="second-column__info">
 							<h3 class="second-column__title">Breifs</h3>
@@ -179,10 +183,12 @@
 				</div>
 			</div>
 		</section>
-	</main>
-	<footer class="footer"></footer>
+		</main>
+		<footer class="footer"></footer>
+  </div>
 	<script src="./js/burger.js"></script>
 	<script src="./js/animation.js"></script>
 	<script src="./js/image-animation.js"></script>
+	<script src="./js/spin.js"></script>
 </body>
 </html>

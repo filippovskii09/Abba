@@ -605,27 +605,22 @@
 }
 .about__text span:first-child {
 	opacity: 0;
-	transition: all 1s ease 2s;
+	transition: all 1s ease 1.5s;
 	transform: translate(200px, 0px);
-	@media (max-width: 768px){
-		transition: all 0.9s ease 1.5s;
-	}
+
 }
+
 .about__text span:nth-child(2) {
 	opacity: 0;
-	transition: all 1s ease 2s;
+	transition: all 1s ease 1.5s;
 	transform: translate(200px, 0px);
-	@media (max-width: 768px){
-		transition: all 0.9s ease 1.5s;
-	}
 }
+
 .about__text span:last-child {
 	opacity: 0;
-	transition: all 1s ease 2s;
+	transition: all 1s ease 1.5s;
 	transform: translate(200px, 0px);
-	@media (max-width: 768px){
-		transition: all 0.9s ease 1.5s;
-	}
+
 }
 
 ._active-image {

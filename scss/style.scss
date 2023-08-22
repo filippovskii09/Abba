@@ -29,6 +29,9 @@
 	top: 0;
 	width: 100%;
 	opacity: 0.9;
+	@media (max-width: 575px){
+		  padding: 10px 0px;
+	}
 	&::after{
 		content:'';
 		width: 0%;
@@ -502,7 +505,7 @@
 		line-height: 150%; /* 27px */
 		padding-bottom: 48px;
 		opacity: 0;
-		transform: translate(0px,30px);
+		transform: translate(150px,0px);
 		transition: all 1.3s ease 1.5s;
 		@media (max-width: 900px){
 			font-size: 17px;

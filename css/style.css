@@ -626,19 +626,19 @@
 .about__text span:first-child {
   opacity: 0;
   transition: all 1s ease 0.7s;
-  transform: translate(200px, 0px);
+  transform: translate(0px, 20px);
 }
 
 .about__text span:nth-child(2) {
   opacity: 0;
   transition: all 1s ease 0.8s;
-  transform: translate(200px, 0px);
+  transform: translate(0px, 20px);
 }
 
 .about__text span:last-child {
   opacity: 0;
   transition: all 1s ease 0.9s;
-  transform: translate(200px, 0px);
+  transform: translate(0px, 20px);
 }
 
 ._active-image {

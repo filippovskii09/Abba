@@ -196,7 +196,7 @@
 }
 @media (max-width: 768px) {
   .main {
-    padding-top: 45px;
+    padding-top: 100px;
   }
 }
 .main__container {
@@ -758,16 +758,34 @@
   padding-top: 327px;
   padding-bottom: 56px;
   opacity: 0;
-  transition: all 0.5s ease-in-out 0.1s;
+  transition: all 0.6s ease-in-out 0.25s;
+}
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
 }
 .footer__container {
   display: flex;
   flex-direction: column;
   row-gap: 70px;
 }
+@media (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer__top {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+  }
 }
 .footer__line {
   width: 100%;
@@ -778,12 +796,25 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+  }
+}
 
 .footer-top__content {
   display: flex;
   flex-direction: column;
   align-items: start;
   row-gap: 20px;
+}
+@media (max-width: 768px) {
+  .footer-top__content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer-top__list {
   display: flex;
@@ -809,6 +840,11 @@
   display: flex;
   gap: 16px;
 }
+@media (max-width: 426px) {
+  .footer-top__form {
+    flex-direction: column;
+  }
+}
 .footer-top__input {
   padding: 12px;
   padding-right: 0;
@@ -827,6 +863,11 @@
   color: var(--neutral-dark-gray, #505050);
   line-height: 150%; /* 24px */
 }
+@media (max-width: 426px) {
+  .footer-top__input {
+    width: 295px;
+  }
+}
 .footer-top__btn {
   border: 1px solid var(--black, #000);
   padding: 12px 24px;
@@ -840,12 +881,17 @@
   color: #fff;
   cursor: pointer;
 }
+@media (max-width: 426px) {
+  .footer-top__btn {
+    width: 100%;
+  }
+}
 .footer-top__subtext {
   color: var(--black, #000);
   font-size: 12px;
   line-height: 150%; /* 18px */
 }
-.footer-top__subtext span {
+.footer-top__subtext a {
   text-decoration: underline;
   color: #000;
 }

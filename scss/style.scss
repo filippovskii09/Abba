@@ -15,20 +15,7 @@
 	align-items: center;
 	z-index: 9999;
  }
- 
-//  .spinner {
-// 	border: 4px solid rgba(0, 0, 0, 0.3);
-// 	border-top: 4px solid #000;
-// 	border-radius: 50%;
-// 	width: 40px;
-// 	height: 40px;
-// 	animation: spin 2s linear infinite;
-//  }
- 
-//  @keyframes spin {
-// 	0% { transform: rotate(0deg); }
-// 	100% { transform: rotate(360deg); }
-//  }
+
  
  .hidden {
 	display: none;
@@ -205,13 +192,10 @@
 	transition: all 0.3s ease 0s;
 }
 
-
-
 .main {
 	padding-top: 222px;
-
 	@media (max-width: 768px){
-		  padding-top: 45px;
+		  padding-top: 100px;
 	}
 	&__container {
 		display: flex;
@@ -305,7 +289,6 @@
 		}
 	}
 }
-
 .second {
 	margin-top: 225px;
 	margin-bottom: 50px;
@@ -760,16 +743,28 @@
 	padding-top: 327px;
 	padding-bottom: 56px;
 	opacity: 0;
-	transition: all 0.5s ease-in-out 0.1s;
+	transition: all 0.6s ease-in-out 0.25s;
+	@media (max-width: 768px){
+		text-align: center;
+	}
 	&__container {
 		display: flex;
 		flex-direction: column;
 		row-gap: 70px;
+		@media (max-width: 768px){
+			flex-direction: column;
+			align-items: center;
+	 }
 	}
 
 	&__top {
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: 768px){
+			  flex-direction: column;
+			  align-items: center;
+			  row-gap: 50px;
+		}
 	}
 
 	&__line {
@@ -781,6 +776,11 @@
 	&__bottom {
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: 768px){
+			flex-direction: column;
+			align-items: center;
+			row-gap: 25px;
+	 }
 	}
 }
 
@@ -791,6 +791,10 @@
 		flex-direction: column;
 		align-items: start;
 		row-gap:20px;
+		@media (max-width: 768px){
+			flex-direction: column;
+			align-items: center;
+	 }
 	}
 
 	&__list {
@@ -823,6 +827,9 @@
 	&__form {
 		display: flex;
 		gap: 16px;
+		@media (max-width: 426px){
+			  flex-direction: column;
+		}
 	}
 
 	&__input {
@@ -838,6 +845,9 @@
 			color: var(--neutral-dark-gray, #505050);
 			line-height: 150%; /* 24px */
 		}
+		@media (max-width: 426px){
+			  width: 295px;
+		}
 	}
 
 	&__btn {
@@ -852,13 +862,16 @@
 			color:#fff;
 			cursor: pointer;
 		}
+		@media (max-width: 426px){
+			width: 100%;
+	 }
 	}
 
 	&__subtext {
 		color: var(--black, #000);
 		font-size: 12px;
 		line-height: 150%; /* 18px */
-		& span {
+		& a {
 			text-decoration: underline;
 			color:#000;
 		}

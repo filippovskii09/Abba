@@ -10,10 +10,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;800&display=swap" rel="stylesheet"> -->
 	<title>Abba</title>
 </head>
-<body>
+<body id="top">
 	<div class="preloader">
-		<div class="spinner"></div>
-	 </div>
+		<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+	</div>
   <div class="content hidden">
 		<header class="header">
 		<div class="header__container container">
@@ -21,9 +21,9 @@
 			<div class="header__menu menu">
 				<nav class="menu__body">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link ">Projects</a></li>
-						<li class="menu__item"><a href="" class="menu__link ">About</a></li>
-						<li class="menu__item"><a href="" class="menu__link ">Digital Assets</a></li>
+						<li class="menu__item"><a href="#projects" class="menu__link ">Projects</a></li>
+						<li class="menu__item"><a href="#about" class="menu__link ">About</a></li>
+						<li class="menu__item"><a href="#footer" class="menu__link ">Digital Assets</a></li>
 					</ul>
 					<div class="menu__socials">
 						<img src="./images/menu-images/1.svg" alt="">
@@ -106,7 +106,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="page__projects projects">
+		<section class="page__projects projects" id="projects">
 			<div class="projects__container container">
 				<h2 class="projects__title anim-items anim-no-hide">MY PROJECTS</h2>
 				<ul class="projects__list">
@@ -164,7 +164,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="page__about about">
+		<section class="page__about about" id="about">
 			<div class="about__container container">
 				<div class="about__row about__row-left">
 					<p class="about__name anim-items anim-no-hide">About Me</p>
@@ -184,11 +184,58 @@
 			</div>
 		</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer anim-items" id="footer">
+			<div class="footer__container container">
+				<div class="footer__top footer-top">
+					<div class="footer-top__content">
+						<a href="#top" class="header__logo"><img src="./images/logo.svg" alt=""></a>
+						<ul class="footer-top__list">
+							<li class="footer-top__item">
+								<a href="#projects" class="footer-top__link">Projects</a>
+							</li>
+							<li class="footer-top__item">
+								<a href="#about" class="footer-top__link">About</a>
+							</li>
+							<li class="footer-top__item">
+								<a href="#footer" class="footer-top__link">Digital Assets</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-top__info">
+						<h4 class="footer-top__title">Subscribe to my emailing list</h4>
+						<form action="" class="footer-top__form">
+							<input type="email" placeholder="Enter your email" class="footer-top__input">
+							<button class="footer-top__btn">Subscribe</button>
+						</form>
+						<p class="footer-top__subtext">By subscribing you agree to with our <a href="https://en.wikipedia.org/wiki/Private_police">Privacy Policy</a></p>
+					</div>
+				</div>
+				<div class="footer__line"></div>
+				<div class="footer__bottom footer-bottom">
+					<p class="footer-bottom__copyright">2022 Relume. All right reserved.</p>
+					<div class="footer-bottom__socials">
+						<a href="">
+							<img src="./images/menu-images/1.svg" alt="">
+						</a>
+						<a href="">
+							<img src="./images/menu-images/2.svg" alt="">
+						</a>
+						<a href="">
+							<img src="./images/menu-images/3.svg" alt="">
+						</a>
+						<a href="">
+							<img src="./images/menu-images/4.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
   </div>
 	<script src="./js/burger.js"></script>
 	<script src="./js/animation.js"></script>
 	<script src="./js/image-animation.js"></script>
 	<script src="./js/spin.js"></script>
+	<script src="./js/slow-scroll.js"></script>
+	<script src="./js/header-add-class.js"></script>
 </body>
 </html>

@@ -21,10 +21,9 @@
 }
 
 .header {
-  transition: all 0.3s ease-in-out 0s;
   padding: 20px 0px;
-  transition: all 0.3s ease-in-out 0.1s;
-  position: absolute;
+  transition: all 0.6s ease-in-out 0.1s;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -81,17 +80,19 @@
   color: #000;
 }
 
-.header-scroll {
+.header-fixed {
   position: fixed;
   background-color: #fff;
+  transition: all 0.6s ease-in-out 0s;
   z-index: 20;
+  top: 0;
 }
-.header-scroll::after {
+.header-fixed::after {
   content: "";
   width: 100%;
 }
 
-.header-scroll .header:after {
+.header-fixed .header:after {
   width: 100%;
 }
 

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	mainBlock.classList.add('_active')
 })
 if (animItems.length > 0) {
-	console.log(animItems)
+	// console.log(animItems)
 	window.addEventListener('scroll', animOnScroll)
 	function animOnScroll(params) {
 

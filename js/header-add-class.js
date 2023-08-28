@@ -2,16 +2,31 @@ let scrollpos = window.scrollY
 
 const header = document.querySelector('.header');
 
-const scrollChange = 100;
+const headerHidden = 100;
+const headerFixed = 110;
 
-const addClassOnScroll = () => header.classList.add('header-scroll')
-const removeClassOnScroll = () => header.classList.remove('header-scroll');
+const addHiddenToHeader = () => header.classList.add('header-hidden')
+const removeHiddenToHeader = () => header.classList.remove('header-hidden')
+const addClassOnScroll = () => header.classList.add('header-fixed')
+const removeClassOnScroll = () => header.classList.remove('header-fixed');
 
 window.addEventListener('scroll', () => {
 	scrollpos = window.scrollY
-	if (scrollpos >= scrollChange) {
-		addClassOnScroll()
+	if (scrollpos <= headerHidden) {
+		addHiddenToHeader();
+		removeClassOnScroll();
+	} else if(scrollpos >= headerFixed) {
+		removeHiddenToHeader();
+		addClassOnScroll();
+	}	else {
+		removeHiddenToHeader();
+		removeClassOnScroll();
+	}
+
+	if (scrollpos = 0) {
+		removeHiddenToHeader();
+		removeClassOnScroll();
 	} else {
-		removeClassOnScroll()
+		console.log('Hello My dear friend');
 	}
 })

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;800&display=swap" rel="stylesheet"> -->
@@ -32,7 +33,7 @@
 						<img src="./images/menu-images/4.svg" alt="">
 					</div>
 				</nav>
-				<button class="header__btn">Let’s Talk</button>
+				<button data-modal class="header__btn">Let’s Talk</button>
 				<button type="button" class="menu__icon icon-menu">
 					<span></span>
 					<span></span>
@@ -183,6 +184,21 @@
 				</div>
 			</div>
 		</section>
+		<section class="modal">
+			<div class="modal__content">
+				<h4 class="modal__title">Enter info to get fitback</h4>
+				<span data-close class="material-symbols-outlined">
+					close
+					</span>
+					<form action="#" >
+						<div class="modal__inputs">
+							<input placeholder="Your name" type="text" class="modal__name">
+							<input placeholder="Your email" type="email" class="modal__email">
+						</div>
+						<button type="submit" class="modal__btn">Send</button>
+					</form>
+			</div>
+		</section>
 		</main>
 		<footer class="footer anim-items" id="footer">
 			<div class="footer__container container">
@@ -230,6 +246,7 @@
 				</div>
 			</div>
 		</footer>
+
   </div>
 	<script src="./js/burger.js"></script>
 	<script src="./js/animation.js"></script>
@@ -237,5 +254,6 @@
 	<script src="./js/spin.js"></script>
 	<script src="./js/slow-scroll.js"></script>
 	<script src="./js/header-add-class.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 </html>

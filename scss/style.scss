@@ -433,7 +433,6 @@
 		row-gap: 78px;
 		padding-top: 78px;
 	}
-
 	&__item {
 		position: relative;
 		height: 447px;
@@ -444,7 +443,7 @@
 	}
 }
 
-.projects-item {
+.projects__item {
 	&__image {
 		position: absolute;
 		z-index: -1;
